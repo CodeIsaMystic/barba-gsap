@@ -5,7 +5,10 @@
     "es6": true,
     "jest": true
   },
-  "extends": "eslint:recommended",
+  "extends": {
+    "eslint:recommended",
+    "gsap"
+  },
   "parserOptions": {
     "ecmaVersion": 9,
     "sourceType": "module"
@@ -22,7 +25,8 @@
       "always-multiline"
     ],
     "comma-spacing": [
-      "error", {
+      "error",
+      {
         "before": false,
         "after": true
       }
@@ -39,7 +43,8 @@
     ],
     "indent": [
       "error",
-      2, {
+      2,
+      {
         "SwitchCase": 1
       }
     ],
@@ -50,7 +55,8 @@
       "error"
     ],
     "lines-around-comment": [
-      "error", {
+      "error",
+      {
         "beforeBlockComment": true,
         "beforeLineComment": true
       }
@@ -69,7 +75,8 @@
       "error"
     ],
     "no-multiple-empty-lines": [
-      "error", {
+      "error",
+      {
         "max": 1
       }
     ],
@@ -118,7 +125,8 @@
     ],
     "spaced-comment": [
       "error",
-      "always", {
+      "always",
+      {
         "block": {
           "balanced": true
         }
